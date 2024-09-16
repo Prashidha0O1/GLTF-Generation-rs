@@ -4,3 +4,15 @@ This project demonstrates how to generate 3D boxes in GLTF format using Rust com
 
 ## Frontend 
 A simple frontend for visualization for 2D animation using Rust as a backend and WebAssembly.
+
+
+## USAGE 
+ Clone this repo:
+```
+git clone https://github.com/Prashidha0O1/GLTF-Generation-rs.git
+```
+
+- Run
+```
+  wasm-pack build --target web
+```
