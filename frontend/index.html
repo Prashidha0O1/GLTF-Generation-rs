@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Animation with Rust and WebAssembly</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        canvas {
+            margin-top: 50px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>2D Animation Studio</h1>
+    <canvas id="animation-canvas" width="400" height="300"></canvas>
+
+    <script type="module">
+        import init from '../pkg/animations_2d.js';
+
+        async function run() {
+            await init();
+        }
+
+        run();
+    </script>
+</body>
+</html>
